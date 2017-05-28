@@ -117,9 +117,14 @@ namespace Numord
 
         public static string ConvertNumord(string number)
         {
-
+            var isPositive = false;
             if (number == "0") return "صفر";
             var numString = (number.Contains(',')) ? number.Replace(",", Empty) : number;
+            if (number.Contains('+'))
+            {
+                numString = number.Replace("+", Empty);
+                isPositive = true;
+            }
             bool isNegative = number.Substring(0, 1) == "-";
             numString = (number.Contains('-')) ? number.Replace("-", Empty) : numString;
             long num;
@@ -165,6 +170,10 @@ namespace Numord
             if (isNegative && num != 0)
             {
                 strFinal = strFinal.Insert(0, "منفی ");
+            }
+            if (isPositive && num != 0)
+            {
+                strFinal = strFinal.Insert(0, "مثبت ");
             }
             return strFinal;
         }
