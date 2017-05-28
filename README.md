@@ -7,3 +7,4 @@ Convert Integer to Persian Words for C#.Net Users
 <br>Examples :<br><br>
 <img src="Sample/ex1.png"><br><br>
 <img src="Sample/ex2.png"><br><br>
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
