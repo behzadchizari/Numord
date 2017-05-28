@@ -10,8 +10,8 @@ Convert Integer to Persian Words for C#.Net Users
 
 <h2> >> Sign Number Support :</h2>
 <img src="Sample/ex6.png">
-<img src="Sample/ex7.png">
 <img src="Sample/ex8.png">
+<img src="Sample/ex7.png">
 
 <h2> >> High Range(-999999999999999 to +999999999999999) :</h2>
 <img src="Sample/ex3.png">
