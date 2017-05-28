@@ -7,3 +7,12 @@ Convert Integer to Persian Words for C#.Net Users
 <br>Examples :<br><br>
 <img src="Sample/ex1.png">
 <img src="Sample/ex2.png">
+
+<h2>High Range :</h2>
+<img src="Sample/ex3.png">
+
+<h2>Error and Exception Handling :</h2>
+<img src="Sample/ex4.png">
+
+<h2>Minus Number Support :</h2>
+<img src="Sample/ex5.png">
