@@ -33,5 +33,5 @@ Convert Integer to Persian Words for C#.Net Users
 </ul>
 <h3> 3.0 </h3>
 <ul>
-    <li>Create a FUCKING .java Code for Project</li>
+    <li>Create a FUCKING .java Code for Project with alot of Bugs</li>
 </ul>
