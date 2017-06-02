@@ -19,7 +19,7 @@ Convert Integer to Persian Words for C#.Net Users
 <h2> >> Error and Exception Handling :</h2>
 <img src="Sample/ex4.png">
 
-<h2> >> Versions Featur :</h2>
+<h2> >> Versions Feature :</h2>
 
 <h3> 1.0 </h3>
 <ul>
