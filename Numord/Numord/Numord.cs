@@ -13,7 +13,7 @@ namespace Numord
         private static readonly string[] Dec = { "ده", "بیست", "سی", "چهل", "پنجاه", "شصت", "هفتاد", "هشتاد", "نود" };
         private static readonly string[] Teen ={"یازده", "دوازده", "سیزده", "چهارده", "پانزده", "شانزده", "هفده","هجده", "نوزده"};
         private static readonly string[] Hunder ={"صد", "دویست", "سیصد", "چهارصد", "پانصد", "ششصد", "هفصد", "هشتصد","نهصد"};
-        private static readonly string[] Megi = { "هزار", "میلیون", "میلیارد", "هزارمیلیارد", "بیلیارد", "تریلیون" };
+        private static readonly string[] Megi = { "هزار", "میلیون", "میلیارد", "بیلیون", "بیلیارد", "تریلیون" };
 
         private static string FirstTreeDigitReader(long num)
         {
