@@ -90,18 +90,17 @@ namespace Numord
                     }
                     break;
             }
-            var j = 0;
             var final = str.Where(t => t != null).Aggregate("", (current, t) => current + (t + " و "));
             return final.Remove(final.Length - 2, 1).Trim();
         }
 
-        private static string[] RemoveIndices(string[] indicesArray, int removeAt)
+        private static string[] RemoveIndices(IReadOnlyList<string> indicesArray, int removeAt)
         {
-            string[] newIndicesArray = new string[indicesArray.Length - 1];
+            var newIndicesArray = new string[indicesArray.Count - 1];
 
-            int i = 0;
-            int j = 0;
-            while (i < indicesArray.Length)
+            var i = 0;
+            var j = 0;
+            while (i < indicesArray.Count)
             {
                 if (i != removeAt)
                 {
@@ -125,14 +124,14 @@ namespace Numord
                 numString = number.Replace("+", Empty);
                 isPositive = true;
             }
-            bool isNegative = number.Substring(0, 1) == "-";
+            var isNegative = number.Substring(0, 1) == "-";
             numString = (number.Contains('-')) ? number.Replace("-", Empty) : numString;
             long num;
             if (!long.TryParse(numString, out num)) return "the inpute is not in correct format or the Length is too large";
             var size = num.ToString().Length;
             var strFinal = "";
             var strArr = new string[(int)Math.Ceiling((float)size / 3)];
-            for (int i = 0; i < strArr.Length; i++)
+            for (var i = 0; i < strArr.Length; i++)
             {
                 var x = size % 3;
                 try
