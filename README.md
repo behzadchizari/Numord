@@ -1,5 +1,5 @@
 # Numord
-![Latest Version](https://img.shields.io/badge/version-3.0-blue.svg)<br>
+![Latest Version](https://img.shields.io/badge/version-3.1-blue.svg)<br>
 Convert Integer to Persian Words for C#.Net Users 
 <p>>> 1 - Add the .dll in <i>..\Numord\Numord\Numord\obj\Debug</i> to your Project refrences</p>
 <p>>> 2 - Follow the imgages below								  </p>
