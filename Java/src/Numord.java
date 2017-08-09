@@ -90,7 +90,7 @@ public class Numord {
 
     public static String ConvertNumord(String number) {
         boolean isPositive = false;
-        if (number == "0") return "صفر";
+        if (number .equals("0")) return "صفر";
         String numString = (number.indexOf(",") != -1) ? number.replaceAll(",", "") : number;
         if (number.indexOf("+") != -1) {
             numString = number.replaceAll("+", "");
@@ -103,7 +103,8 @@ public class Numord {
         try {
             num = Long.parseLong(numString);
         } catch (Exception e) {
-            return "the inpute is not in correct format or the Length is too large";
+            //return "the inpute is not in correct format or the Length is too large";
+            return "";
         }
         int size = String.valueOf(num).length();
         String strFinal = "";
@@ -121,7 +122,7 @@ public class Numord {
             }
         }
         for (int i = strArr.length - 1; i >= 0; i--) {
-            if (!(strArr[i] == null || strArr[i] == "" || strArr[i] == " ")) {
+            if (!(strArr[i] == null || strArr[i] == "" || strArr[i].equals(" "))) {
                 if (i != 0)
                     strArr[i] += Megi[i - 1];
             } else {
