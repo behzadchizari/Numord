@@ -114,20 +114,20 @@ namespace Numord
             return newIndicesArray;
         }
 
-        public static string ConvertNumord(string number)
+        public static string ConvertNumord(string number, string errorLongMessage = "The input is not in correct format or the Length is too large")
         {
             var isPositive = false;
             if (number == "0") return "صفر";
-            var numString = (number.Contains(',')) ? number.Replace(",", Empty) : number;
+            var numString = (number.Contains(',')) ? number.Replace(",", String.Empty) : number;
             if (number.Contains('+'))
             {
-                numString = number.Replace("+", Empty);
+                numString = number.Replace("+", String.Empty);
                 isPositive = true;
             }
             var isNegative = number.Substring(0, 1) == "-";
-            numString = (number.Contains('-')) ? number.Replace("-", Empty) : numString;
+            numString = (number.Contains('-')) ? number.Replace("-", String.Empty) : numString;
             long num;
-            if (!long.TryParse(numString, out num)) return "the inpute is not in correct format or the Length is too large";
+            if (!long.TryParse(numString, out num)) return errorLongMessage;
             var size = num.ToString().Length;
             var strFinal = "";
             var strArr = new string[(int)Math.Ceiling((float)size / 3)];
